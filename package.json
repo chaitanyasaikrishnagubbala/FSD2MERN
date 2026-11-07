@@ -1,0 +1,28 @@
+{
+  "name": "driveease-monorepo",
+  "version": "1.0.0",
+  "description": "DriveEase - Premium Vehicle Rental Management System (MERN Stack)",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix client run build",
+    "start": "node server/src/server.js"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "vite",
+    "mongodb",
+    "express",
+    "vehicle-rental"
+  ],
+  "author": "DriveEase Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
